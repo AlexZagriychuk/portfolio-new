@@ -8,7 +8,7 @@ export default function Navigation() {
 
   return (
     <nav className="basis-56 grow-0 bg-slate-700 flex-col justify-center items-center align-middle">
-      <img src="/my_photo.jpg" alt="my photo" />
+      <img src="/my_photo.jpg" alt="my photo" className="w-full aspect-square object-cover" />
       <div className="p-2 bg-cyan-600 font-mono text-lg font-bold text-slate-100 text-center">Alexander Zagriychuk</div>
 
       <ul>
