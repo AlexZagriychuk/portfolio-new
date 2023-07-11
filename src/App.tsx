@@ -1,9 +1,7 @@
-import './App.css'
-
 function App() {
   return (
     <>
-      <p>Empty portfolio template</p>
+      <h1 className="text-3xl font-bold underline">Empty portfolio template</h1>
     </>
   )
 }
