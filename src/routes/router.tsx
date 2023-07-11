@@ -7,6 +7,8 @@ import Skills from "../components/skills/Skills";
 import Portfolio from "../components/portfolio/Portfolio";
 import Certificates from "../components/certificates/Certificates";
 import Contacts from "../components/contacts/Contacts";
+import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faGraduationCap, faUser, faLaptopCode, faCertificate, faEnvelope } from "../icons/icons";
 
 export enum Page {
   HOME = "Home",
@@ -17,13 +19,13 @@ export enum Page {
   CONTACTS = "Contacts",
 }
 
-export const pages: {name: Page, path: string, element: JSX.Element}[] = [
-  {name: Page.HOME, path: "home", element: <Home />},
-  {name: Page.ABOUT_ME, path: "about_me", element: <AboutMe />},
-  {name: Page.SKILLS, path: "skills", element: <Skills />},
-  {name: Page.PORTFOLIO, path: "portfolio", element: <Portfolio />},
-  {name: Page.CERTIFICATES, path: "certificates", element: <Certificates />},
-  {name: Page.CONTACTS, path: "contacts", element: <Contacts />},
+export const pages: {name: Page, path: string, element: JSX.Element, icon: IconDefinition}[] = [
+  {name: Page.HOME, path: "home", element: <Home />, icon: faHouse},
+  {name: Page.ABOUT_ME, path: "about", element: <AboutMe />, icon: faUser},
+  {name: Page.SKILLS, path: "skills", element: <Skills />, icon: faGraduationCap},
+  {name: Page.PORTFOLIO, path: "portfolio", element: <Portfolio />, icon: faLaptopCode},
+  {name: Page.CERTIFICATES, path: "certificates", element: <Certificates />, icon: faCertificate},
+  {name: Page.CONTACTS, path: "contacts", element: <Contacts />, icon: faEnvelope},
 ]
 
 export const router = createBrowserRouter(
